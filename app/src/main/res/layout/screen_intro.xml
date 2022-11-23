@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.viewpager2.widget.ViewPager2
+
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:dotsColor="@color/white"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:indicatorColor="#FE7B75"
+        app:layout_constraintBottom_toTopOf="@id/skip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:progressMode="true"
+        app:selectedDotColor="@color/main" />
+
+    <TextView
+
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:text="Skip"
+        android:textColor="#FE7B75"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@id/next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/next"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:background="@drawable/back_style_next_button"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

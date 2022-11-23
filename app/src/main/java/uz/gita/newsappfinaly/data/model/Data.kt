@@ -1,0 +1,67 @@
+package uz.gita.newsappfinaly.data.model
+
+import uz.gita.newsappfinaly.R
+
+object Data {
+
+    val introData = arrayListOf(
+        IntroData("Get the latest news from reliable sources", R.drawable.putin),
+        IntroData("Get actual news from around the world", R.drawable.wars),
+        IntroData("Sport, politics, healthy, & anything", R.drawable.sport)
+    )
+    val countryCodeList = arrayListOf(
+        "ae",
+        "ar",
+        "at",
+        "au",
+        "be",
+        "bg",
+        "br",
+        "ca",
+        "ch",
+        "cn",
+        "co",
+        "cu",
+        "cz",
+        "de",
+        "eg",
+        "fr",
+        "gb",
+        "gr",
+        "hk",
+        "hu",
+        "id",
+        "ie",
+        "il",
+        "in",
+        "it",
+        "jp",
+        "kr",
+        "lt",
+        "lv",
+        "ma",
+        "mx",
+        "my",
+        "ng",
+        "nl",
+        "no",
+        "nz",
+        "ph",
+        "pl",
+        "pt",
+        "ro",
+        "rs",
+        "ru",
+        "sa",
+        "se",
+        "sg",
+        "si",
+        "sk",
+        "th",
+        "tr",
+        "tw",
+        "ua",
+        "us",
+        "ve",
+        "za")
+}
